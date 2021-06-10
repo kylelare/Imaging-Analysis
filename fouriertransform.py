@@ -9,7 +9,7 @@ plt.imshow(image, cmap='gray')
 plt.axis('off')
 plt.show()
 
-# discrete fourier transform
+#discrete fourier transform on image
 ft = np.fft.fft2(image)
 ftshift = np.fft.fftshift(ft)
 magspectrum = 20*np.log(np.abs(ftshift))
